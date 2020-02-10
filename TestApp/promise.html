@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+                function doTask() {
+                    return new Promise((resolve,reject) => {
+                            resolve("Product")                    
+                        });
+                }
+
+                    doTask().then((d) => {
+                        console.log("Success",d);
+                    },
+                (e) => {
+                    console.log("Error",e);
+                });
+
+        </script>
+    </body>
+</html>
